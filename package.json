@@ -10,8 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "node-fetch": "^2.6.0",
-    "nodeenv": "^3.0.10",
+    "node-fetch": "^2.6.1",
+    "nodeenv": "^3.0.39",
     "twit": "^2.2.11"
   }
 }
