@@ -20,7 +20,10 @@ Debe existir un archivo de configuración que coincida, por ejemplo:
 Ejemplos:
 
 ```
-node main.js xalapa
+node main.js xalapa test
+node main.js puebla test
+node main.js cdmx test
+node main.js xalapa twitter
 node main.js puebla telegram
 node main.js cdmx telegram twitter
 ```

@@ -19,15 +19,19 @@ const alias = process.argv[2];
 const servicios = process.argv.slice(3);
 const includesTwitter = servicios.includes('twitter');
 const includesTelegram = servicios.includes('telegram');
+const includesTest = servicios.includes('test');
 
 // Cargar config de .env.xxxxxxxx
 const config = configLoader.load(alias);
-// console.log('config:');
-// console.log(config);
 
 activos(config.municipio).then((res) => {
   const mensaje = `${config.mensaje} ${res}`;
   console.log(mensaje);
+
+  // test
+  if (includesTest) {
+    console.log(mensaje);
+  }
 
   // twitter
   if (includesTwitter) {
